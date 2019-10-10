@@ -1,0 +1,144 @@
+<div class="modal modal-sidebar fade left" id="modalMyMember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" modal="true">
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-full-height modal-left" role="document">
+      
+        <div class="modal-content" id="myGroupContent">
+           
+            <div class="modal-header">
+
+                <h4 class="modal-title w-100" id="myModalLabel">My Member test</h4>
+                <button class="btn-reset button-icon left-button" id="newGroup">
+                    <span class="mdi mdi-account-multiple-plus mdi-24px text-white"></span>
+                </button>
+                <a class="button-icon right-button btn-minimize" href="#" data-dismiss="modal" aria-label="Close">
+                    <span class="mdi mdi-menu-left mdi-36px text-white"></span>
+                </a>
+
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center loca-bg-grey loca-tabs-wrapper">
+                        <div class="col-12">
+                            <ul class="nav loca-tabs nav-tabs " id="myTab" role="tablist">
+                                <li class="nav-item w-50 waves-effect waves-light">
+                                    <a class="nav-link active" id="member-list-tab" data-toggle="tab" href="#my-member" role="tab" aria-controls="my-member" aria-selected="true">Member List</a>
+                                </li>
+                                <li class="nav-item w-50 waves-effect waves-light">
+                                    <a class="nav-link" id="my-group-tab" data-toggle="tab" href="#my-group" role="tab" aria-controls="my-group" aria-selected="false">My Group</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end tab nav my member -->
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="my-member" role="tabpanel" aria-labelledby="member-list-tab">
+                            <div class="row">
+                                <div class="col-12 mt-2 pb-3">
+                                    <ul class="list-group list-group-flush loca-list-member">
+                                        <li class="list-group-item">
+                                            <a href="member-detail.html" class="nav-item">
+                                                <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face3.png);"></div>
+                                                <span class=" mr-auto ml-3">Vanessa Ryan</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="member-detail.html" class="nav-item">
+                                                <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face4.png);"></div>
+                                                <span class=" mr-auto ml-3">Jessica Miles</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="member-detail.html" class="nav-item">
+                                                <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face5.png);"></div>
+                                                <span class=" mr-auto ml-3">Christina Moel</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="member-detail.html" class="nav-item">
+                                                <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face8.png);"></div>
+                                                <span class=" mr-auto ml-3">Christian John</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end row my member list -->
+                            <div class="row loca-divider">
+                            </div>
+                            <div class="row">
+                                <div class="col-12  mt-3 pb-3">
+                                    <p class="text-grey1 small">
+                                        Waiting for aproval
+                                    </p>
+                                    <ul class="list-group list-group-flush loca-list-member">
+                                        <li class="list-group-item">
+                                            <a href="#" class="nav-item">
+                                                <div class="photo-profile-medium d-block border rounded-circle bg-cover washout" style="background-image: url(img/photo-profile/face6.png);"></div>
+                                                <span class=" mr-auto ml-3">Pena Vandez</span>
+                                                <span class="btn  btn-invited z-depth-0 ml-auto waves-effect waves-light">invited</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end row invited member list -->
+                        </div>
+                        <!-- end tab my-member-list -->
+                        <div class="tab-pane fade" id="my-group" role="tabpanel" aria-labelledby="my-group-tab">
+                            <div class="row">
+                                <div class="col-12 mt-3 pb-3">
+                                    <ul class="list-group list-group-flush loca-list-member">
+                                        <li class="list-group-item">
+                                            <a href="group-detail.html" class="nav-item">
+                                                <div class="photo-profile-small d-inline border mr-2 rounded-circle bg-cover" style="background-image: url(img/photo-profile/face3.png);"></div>
+                                                <div class="photo-profile-small d-inline border mr-2 rounded-circle bg-cover" style="background-image: url(img/photo-profile/face1.png);"></div>
+                                                <div class="photo-profile-small d-inline  rounded-circle loca-bg-grey d-flex align-items-center">
+                                                    <span class="medium text-grey1 mx-auto">+8</span>
+                                                </div>
+                                                <span class=" ml-auto ">Family</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <a href="group-detail.html" class="nav-item">
+                                                <div class="photo-profile-small d-inline border mr-2 rounded-circle bg-cover" style="background-image: url(img/photo-profile/face4.png);"></div>
+                                                <div class="photo-profile-small d-inline border mr-2 rounded-circle bg-cover" style="background-image: url(img/photo-profile/face5.png);"></div>
+                                                <div class="photo-profile-small d-inline  rounded-circle loca-bg-grey d-flex align-items-center">
+                                                    <span class="medium text-grey1 mx-auto">+8</span>
+                                                </div>
+                                                <span class=" ml-auto ">Business</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="group-detail.html" class="nav-item">
+                                                <div class="photo-profile-small d-inline border mr-2 rounded-circle bg-cover" style="background-image: url(img/photo-profile/face6.png);"></div>
+                                                <div class="photo-profile-small d-inline border mr-2 rounded-circle bg-cover" style="background-image: url(img/photo-profile/face7.png);"></div>
+                                                <div class="photo-profile-small d-inline  rounded-circle loca-bg-grey d-flex align-items-center">
+                                                    <span class="medium text-grey1 mx-auto">+8</span>
+                                                </div>
+                                                <span class=" ml-auto ">Friend</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab my-group -->
+                </div>
+                <!-- end tab content -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+      $("#newGroup").click(function(){
+    $("#myGroupContent").load("modal-myMember-2-newGroup.html");
+
+  });
+</script>
