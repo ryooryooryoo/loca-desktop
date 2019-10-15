@@ -401,7 +401,8 @@ li.list-group-item a.nav-item {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     border-bottom: none;
-    padding-bottom: 0px;
+    padding-bottom: 12px!important;
+    padding-top: 12px!important;
 }
 
 .modal-dialog .modal-content .modal-footer {
@@ -506,7 +507,7 @@ li.list-group-item a.nav-item {
 
 .sidebar {
     position: absolute;
-    height: 480px;
+    height: 400px;
     width: 60px;
     top: 0;
     left: 0;
@@ -516,7 +517,7 @@ li.list-group-item a.nav-item {
 .rightbar{
 	 position: absolute;
     height: 100px;
-    width: 120px;
+    width: 100px;
     top: 0;
     right: 0;
     z-index: 10;
@@ -524,11 +525,11 @@ li.list-group-item a.nav-item {
 
 .btn-sidebar {
 	margin:0px;
-	width: 60px;
-	height: 60px;
+	width: 48px;
+	height: 48px;
 	margin-bottom: 16px;
     border-radius: 50%;
-    padding: 12px 17px;
+    padding: 10px 16px;
    
 }
 
@@ -548,16 +549,16 @@ li.list-group-item a.nav-item {
     border-radius: 50%;
     background-color: #E91E63;
     top:16px;
-    left: 62px;
+    left: 52px;
     z-index: 100;
 }
 
 .modal.modal-sidebar{
-	width: 600px;
+	width: 420px;
 }
 
 .modal.modal-sidebar .modal-dialog {
-    width: 600px;
+    width: 396px;
 }
 
 .modal-sidebar .modal-dialog .modal-content {
@@ -578,14 +579,19 @@ li.list-group-item a.nav-item {
 	 align-items: center;
 }
 
+.modal-header .mdi-18px.mdi-set, 
+.modal-header .mdi-18px.mdi:before{
+    font-size: 20px!important;
+}
+
 .btn-minimize{
 	background-color:#008DFA;
 	color: #fff;
-	padding: 7px 0px;
+	padding: 9px 0px;
 
 	top:0px;
 	position: absolute;
-	right: -36px;
+	right: -24px;
 }
 
 .btn-reset{
@@ -595,4 +601,8 @@ li.list-group-item a.nav-item {
 
 .custom-control-label:hover{
 	cursor: pointer;
+}
+
+.modal-title{
+    font-size: 20px;
 }

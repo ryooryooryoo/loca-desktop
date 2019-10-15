@@ -1,18 +1,13 @@
-<div class="modal modal-sidebar fade left" id="modalMyMember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" modal="true">
-    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-    <div class="modal-dialog modal-full-height modal-left" role="document">
-      <div class="modal-content">
-
 
            
             <div class="modal-header">
 
                 <h4 class="modal-title w-100" id="myModalLabel">My Member test 12</h4>
-                <a class="btn-reset button-icon left-button" id="newGroup" data-toggle="modal" data-target="#modalMyMemberNewGroup" data-dismiss="modal" aria-label="Close">
-                    <span class="mdi mdi-account-multiple-plus mdi-18px text-white"></span>
-                </a>
-                <a class="button-icon right-button btn-minimize"  data-dismiss="modal" aria-label="Close">
-                    <span class="mdi mdi-menu-left mdi-24px text-white"></span>
+                <button class="btn-reset button-icon left-button" id="newGroup">
+                    <span class="mdi mdi-account-multiple-plus mdi-24px text-white"></span>
+                </button>
+                <a class="button-icon right-button btn-minimize" href="#" data-dismiss="modal" aria-label="Close">
+                    <span class="mdi mdi-menu-left mdi-36px text-white"></span>
                 </a>
 
             </div>
@@ -132,22 +127,3 @@
                 <!-- end tab content -->
 
             </div>
-
-   
-      </div>
-
-
-        
-    </div>
-</div>
-
-
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        if(window.location.href.indexOf('#modalMyMemberNewGroup') != -1) {
-          $('#modalMyMemberNewGroup').modal('show');
-        }
-
-      });
-</script>

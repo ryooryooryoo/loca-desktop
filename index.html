@@ -16,6 +16,8 @@
     <link href="css/responsive.css" rel="stylesheet">
     <!-- Rubik Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo-icon.png">
   </head>
   <body>
@@ -24,16 +26,16 @@
     <div class="sidebar mt-3 ml-3">
       <!-- Button trigger modal -->
       <button class="btn btn-primary btn-sidebar has-notif2" data-toggle="modal" data-target="#modalNotification">
-      <i class="mdi mdi-bell mdi-24px"></i>
+      <i class="mdi mdi-bell mdi-18px"></i>
       </button>
       <button type="button" class="btn btn-primary btn-sidebar" data-toggle="modal" data-target="#modalMyMember">
-      <i class="mdi mdi-account-group mdi-24px"></i>
+      <i class="mdi mdi-account-group mdi-18px"></i>
       </button>
       <button type="button" class="btn btn-primary btn-sidebar" data-toggle="modal" data-target="#modalMyLocation">
-      <i class="mdi mdi-map-marker-radius mdi-24px"></i>
+      <i class="mdi mdi-map-marker-radius mdi-18px"></i>
       </button>
       <button type="button" class="btn btn-primary btn-sidebar" data-toggle="modal" data-target="#modalSettings">
-      <i class="mdi mdi-settings mdi-24px"></i>
+      <i class="mdi mdi-settings mdi-18px"></i>
       </button>
       </div><!-- end of sidebar content -->
 
@@ -43,27 +45,26 @@
 
         <div class="dropdown">
           <button class="btn btn-primary btn-add-new d-flex align-items-center "type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  <i class="mdi mdi-plus mdi-24px mr-2"></i>New
-  </button>
+          <i class="mdi mdi-plus mdi-18px mr-2"></i>New
+          </button>
 
-   <div class="dropdown-menu dropdown-menu-right z-depth-1 border-0" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item " href="#">
-      <img src="img/icons/new-app.png" width="40px" height="40px">
-      <span class="ml-2">Invite by app link</span>
-      <hr>
-
-    </a>
-    <a class="dropdown-item" href="#">
-       <img src="img/icons/new-sim.png" width="40px" height="40px">
-      <span class="ml-2">Add SIM card number</span>
-      <hr>
-    </a>
-    <a class="dropdown-item" href="#">
-       <img src="img/icons/new-gps.png" width="40px" height="40px">
-      <span class="ml-2">Add IME GPS Number</span>
-      
-    </a>
-  </div>
+           <div class="dropdown-menu dropdown-menu-right z-depth-1 border-0" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item py-2 " href="#">
+              <img src="img/icons/new-app.png" width="32px" height="32px">
+              <span class="ml-2">Invite by app link</span>
+            
+            </a>
+            <a class="dropdown-item py-2" href="#">
+               <img src="img/icons/new-sim.png" width="32px" height="32px">
+              <span class="ml-2">Add SIM card number</span>
+           
+            </a>
+            <a class="dropdown-item py-2" href="#">
+               <img src="img/icons/new-gps.png" width="32px" height="32px">
+              <span class="ml-2">Add IME GPS Number</span>
+              
+            </a>
+          </div>
         </div>
       
         </div><!-- end of rightbar content -->
@@ -91,18 +92,20 @@
 
 
     <!-- Modal Notification -->
-    <div id="contentModalNotification">
-      
-    </div>
+    <div id="contentModalNotification"></div>     
 
     <!-- Modal My Member -->
-    <div id="contentModalMyMember">
-     
-    </div>
+    <div id="contentModalMyMember"></div>
 
-    <div id="contentMyLocation"></div>
+    <div id="contentMyPlace"></div>
 
-      <div id="contentSettings"></div>
+    <div id="contentNewPlace"></div>
+      
+    <div id="contentSettings"></div>
+
+    <div id="contentNewGroup"></div>
+
+    <div id="contentSetPlace"></div>
 
 
 
@@ -118,14 +121,21 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
 
     <script type="text/javascript">
       $(function(loadModalSidebar){
         $("#contentModalMyMember").load("modal-myMember-1-list.html"); 
-        $("#contentModalNotification").load("modal-notification.html"); 
-         $("#contentMyLocation").load("modal-myLocation.html"); 
-         $("#contentSettings").load("modal-settings.html"); 
+        $("#contentModalNotification").load("modal-notification.html");      
+        $("#contentSettings").load("modal-settings.html"); 
+        $("#contentNewGroup").load("modal-myMember-3-newGroup.html");
+        $("#contentMyPlace").load("modal-myPlace-1-listMyPlace.html");  
+        $("#contentNewPlace").load("modal-myPlace-2-newPlace.html"); 
+        $("#contentSetPlace").load("modal-myPlace-3-setPlace.html"); 
       });
+
+
     </script>
-  </body>
+
+
 </html>
