@@ -1,17 +1,17 @@
 <div class="modal modal-sidebar fade left" id="modalMyMember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" modal="true">
     <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
     <div class="modal-dialog modal-full-height modal-left" role="document">
-      <div class="modal-content">
+        <div class="modal-content">
 
 
-           
+
             <div class="modal-header">
 
-                <h4 class="modal-title w-100" id="myModalLabel">My Member test 12</h4>
+                <h4 class="modal-title w-100" id="myModalLabel">My member</h4>
                 <a class="btn-reset button-icon left-button" id="newGroup" data-toggle="modal" data-target="#modalMyMemberNewGroup" data-dismiss="modal" aria-label="Close">
                     <span class="mdi mdi-account-multiple-plus mdi-18px text-white"></span>
                 </a>
-                <a class="button-icon right-button btn-minimize"  data-dismiss="modal" aria-label="Close">
+                <a class="button-icon right-button btn-minimize" data-dismiss="modal" aria-label="Close">
                     <span class="mdi mdi-menu-left mdi-24px text-white"></span>
                 </a>
 
@@ -38,8 +38,8 @@
                                 <div class="col-12 mt-2 pb-3">
                                     <ul class="list-group list-group-flush loca-list-member">
                                         <li class="list-group-item">
-                                            <a href="member-detail.html" class="nav-item">
-                                                <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face3.png);"></div>
+                                            <a class="nav-item" data-toggle="modal" data-target="#modalMemberDetail" data-dismiss="modal" aria-label="close">
+                                                <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face1.png);"></div>
                                                 <span class=" mr-auto ml-3">Vanessa Ryan</span>
                                             </a>
                                         </li>
@@ -133,11 +133,11 @@
 
             </div>
 
-   
-      </div>
+
+        </div>
 
 
-        
+
     </div>
 </div>
 
@@ -145,9 +145,9 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        if(window.location.href.indexOf('#modalMyMemberNewGroup') != -1) {
-          $('#modalMyMemberNewGroup').modal('show');
+        if (window.location.href.indexOf('#modalMyMemberNewGroup') != -1) {
+            $('#modalMyMemberNewGroup').modal('show');
         }
 
-      });
+    });
 </script>

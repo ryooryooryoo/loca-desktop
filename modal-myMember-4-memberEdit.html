@@ -1,0 +1,109 @@
+<div class="modal modal-sidebar fade left" id="modalMemberEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" modal="true">
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-full-height modal-dialog-scrollable modal-left" role="document">
+        <div class="modal-content">
+
+
+
+            <div class="modal-header">
+                <a class="button-icon left-button  mr-2" href="#">
+                    <span class="mdi mdi-arrow-left mdi-18px text-white"></span>
+                </a>
+
+                <h4 class="modal-title w-100" id="myModalLabel">Edit member</h4>
+
+                <button type="button" class="btn-text white-text show-toastEditMember" data-dismiss="modal" aria-label="Close">
+                        Save
+                </button>
+
+                <a class="button-icon right-button btn-minimize" data-dismiss="modal" aria-label="Close">
+                    <span class="mdi mdi-menu-left mdi-24px text-white"></span>
+                </a>
+
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-column mt-5">
+                            <div class="photo-profile-marker  large d-block border rounded-circle bg-cover mx-auto" style="background-image: url(img/photo-profile/face1.png);">
+                            </div>
+
+                            <form class="mt-5">
+                                <div class="form-group">
+                                    <label for="username" class="loca-label active">Name</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Vanessa Ryan">
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row loca-divider mt-3">
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12" style="overflow: auto;">
+
+
+                            <ul class="list-group list-group-flush loca-list-setting mt-3">
+
+                                <li class="list-group-item px-0 d-flex">
+
+                                    <span class=" mr-auto">Block this profile</span>
+
+
+
+                                    <div class="custom-control custom-switch ml-auto">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitches">
+                                        <label class="custom-control-label" for="customSwitches"></label>
+                                    </div>
+
+                                </li>
+
+                                <li class="list-group-item pl-0">
+                                    <a href="#" data-toggle="modal" data-target="#modal-remove-account">
+                                        <span class=" mr-auto red-text">Remove this account</span>
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tab content -->
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="toast" id="toastEditMember" data-autohide="true" data-delay="4500 " style="position: absolute; top: 20px; right: calc(50% - 250px); ">
+    <div class="toast-body ">
+        <div><b class="blue-text ">Vanessa Ryan</b> is edited</div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+
+
+        $(".show-toastEditMember ").click(function() {
+            $("#toastEditMember ").toast('show');
+        });
+
+
+    });
+</script>
