@@ -1,0 +1,79 @@
+<div class="modal modal-sidebar fade left" id="modalSettingsGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" modal="true">
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-full-height modal-left" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="button-icon left-button  mr-2" href="#">
+                    <span class="mdi mdi-arrow-left mdi-18px text-white"></span>
+                </a>
+                <h4 class="modal-title w-100" >Settings</h4>
+                <div class="dropdown">
+                    <a class="button-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mdi mdi-dots-vertical mdi-18px"></span>
+                    </a>
+            
+                </div>
+                <a class="button-icon right-button btn-minimize" data-dismiss="modal" aria-label="Close">
+                    <span class="mdi mdi-menu-left mdi-24px text-white"></span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+
+                    <!-- confirmation for every page -->
+                    <div class="row alert-confirmation py-3">
+                        <div class="col-12">
+                            <p class="text-white">Are you sure to delete this group ?</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn-reset btn-text text-white mr-auto"><b>CANCEL</b></button>
+                            <button class="btn-reset btn-text text-white negative ml-1 mr-auto" >REMOVE</button>
+                        </div>
+                    </div><!-- end of confirmation -->
+
+                    <div class="row ">
+                     <div class="col-12">
+                            <ul class="list-group list-group-flush loca-list-setting  mt-3">
+                            <li class="list-group-item p-0">
+                                <p class="text-grey1 small mb-1">
+                                Change group name
+                            </p>
+                                <form>
+                                    <div class="form-group">
+                                        
+                                        <input type="text" class="form-control" id="username" placeholder="Your Group Name">
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="list-group-item px-0 d-flex">
+                                
+                                <span class=" mr-auto">Turn off group notification</span>
+                                <div class="custom-control custom-switch ml-auto">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitches">
+                                    <label class="custom-control-label" for="customSwitches"></label>
+                                </div>
+                                
+                            </li>
+                            <li class="list-group-item pl-0">
+                                <a href="#" class="red-text" data-toggle="modal" data-target="#modal-delete-group">
+                                    <span class=" mr-auto">Delete this group</span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                     </div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+          
+        </div>
+    </div>
+</div>

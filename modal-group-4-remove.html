@@ -1,0 +1,93 @@
+<div class="modal modal-sidebar fade left" id="modalRemoveGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" modal="true">
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-full-height modal-left" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="button-icon left-button  mr-2" href="#">
+                    <span class="mdi mdi-arrow-left mdi-18px text-white"></span>
+                </a>
+                <h4 class="modal-title w-100" >Family</h4>
+                <div class="dropdown">
+                    <a class="button-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mdi mdi-dots-vertical mdi-18px"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right z-depth-1">
+                        <a class="dropdown-item" data-toggle="modal" data-target="#modalRemoveGroup" data-dismiss="modal" aria-label="Close">Remove Member</a>
+                        <a class="dropdown-item"  data-toggle="modal" data-target="#modalSettingsGroup" data-dismiss="modal" aria-label="Close">Group Settings</a>
+                        
+                        
+                    </div>
+                </div>
+                <a class="button-icon right-button btn-minimize" data-dismiss="modal" aria-label="Close">
+                    <span class="mdi mdi-menu-left mdi-24px text-white"></span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+               <div class="row ">
+                        <div class="col-12 mt-3">
+                            <p class="text-grey1 small mb-0">
+                                My member list
+                            </p>
+                        </div>
+                        <div class="col-12 ">
+                            <ul class="list-group list-group-flush loca-list-member">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face3.png);"></div>
+                                    <span class=" mr-auto ml-3">Vanessa Ryan</span>
+                                    <div class="custom-control custom-checkbox ml-auto">
+                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                                        <label class="custom-control-label" for="defaultUnchecked"></label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    
+                                    <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face4.png);"></div>
+                                    <span class=" mr-auto ml-3">Jessica Miles</span>
+                                    <div class="custom-control custom-checkbox ml-auto">
+                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                                        <label class="custom-control-label" for="defaultUnchecked2"></label>
+                                    </div>
+                                    
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    
+                                    <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face5.png);"></div>
+                                    <span class=" mr-auto ml-3">Christina Moel</span>
+                                    <div class="custom-control custom-checkbox ml-auto">
+                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                                        <label class="custom-control-label" for="defaultUnchecked3"></label>
+                                    </div>
+                                    
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    
+                                    <div class="photo-profile-medium d-block border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face8.png);"></div>
+                                    <span class=" mr-auto ml-3">Christian John</span>
+                                    <div class="custom-control custom-checkbox ml-auto">
+                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                                        <label class="custom-control-label" for="defaultUnchecked4"></label>
+                                    </div>
+                                    
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+
+            <div class="modal-footer">
+                <div class="container">
+                   <button type="button" class="btn btn-primary btn-lg btn-block z-depth-0 rounded-lg waves-effect waves-light" data-toggle="modal" data-target="#modal-remove-group-member">Remove from group</button>
+          
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

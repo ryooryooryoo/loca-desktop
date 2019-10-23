@@ -644,3 +644,20 @@ li.list-group-item a.nav-item {
 .modal-dialog-scrollable .modal-content {
     overflow: inherit!important;
 }
+
+.alert-confirmation{
+    background: #E91E63;
+    color: #fff;
+}
+
+
+.alert-confirmation button.negative{
+    font-weight: normal;
+    opacity: 0.75;
+}
+
+.alert-confirmation button:hover{
+    color: yellow!important;
+    font-weight: 500!important;
+    opacity:1;
+}
