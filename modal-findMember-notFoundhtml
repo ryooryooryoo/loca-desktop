@@ -1,0 +1,48 @@
+<div class="modal modal-sidebar fade left" id="modalNewMember-nearby" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" modal="true">
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-full-height modal-left" role="document">
+
+        <div class="modal-content" id="myGroupContent">
+
+            <div class="modal-header">
+                <a class="button-icon left-button  mr-2" href="#">
+                    <span class="mdi mdi-arrow-left mdi-18px text-white"></span>
+                </a>
+
+                <h4 class="modal-title w-100" id="myModalLabel">Find member nearby</h4>
+
+                <a class="button-icon right-button btn-minimize" href="#" data-dismiss="modal" aria-label="Close">
+                    <span class="mdi mdi-menu-left mdi-24px text-white"></span>
+                </a>
+
+            </div>
+
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row ">
+          <div class="col-12 mt-3">
+              <p class="text-grey1 small mb-0">
+                Members arround me
+              </p>
+          </div>
+       <div class="row ">
+          <div class="col-12 text-center mt-5">
+            <img src="img/sad.png">
+            <h5 class="mt-3">No member nearby</h5>
+            <p class="small text-grey1">Sadly, there is no member nearby on your <br>
+location,  try again next time</p>
+          </div>
+           <button type="button" class="btn btn-primary btn-sm z-depth-0 rounded-lg mx-auto waves-effect waves-light">Try again</button>
+        </div>
+         
+
+       
+
+        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

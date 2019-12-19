@@ -26,9 +26,18 @@
                             <div class="photo-profile-marker  large d-block border rounded-circle bg-cover mx-auto" style="background-image: url(img/photo-profile/face1.png);">
                             </div>
 
-                            <a href="#" class="btn btn-sm btn-white d-flex align-items-center mt-3 mx-auto">
-                                <span class="mdi mdi-map-marker-path mdi-18px mr-2"></span> History
-                            </a>
+                            <div class="dropdown loca-dropdown date-dropdown d-flex justify-content-center"><!-- add dropdown filter by date -->
+                                <button class="btn btn-dropdown dropdown-toggle mt-3 waves-effect waves-light z-depth-0 border " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mdi mdi-calendar mdi-18px dropdown-has-icon"></span>Today
+                                </button>   
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Yesterday</a>
+                                    <a class="dropdown-item" href="#">Last 7 days</a>
+                                    <a class="dropdown-item" href="#">Last 30 days</a>
+                                </div>
+
+                            </div>
                         </div>
 
                         <div class="col-12 mt-3" style="overflow: auto;">
